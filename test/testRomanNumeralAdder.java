@@ -11,4 +11,11 @@ public class testRomanNumeralAdder {
 		RomanNumeralsAdder romAdd = new RomanNumeralsAdder();
 		assertEquals("Ugyldig input", romAdd.add("","I"));
 	}
+	
+	//testcase 2
+	@Test
+	public void inputIandIequalsII(){
+		RomanNumeralsAdder romAdd = new RomanNumeralsAdder();
+		assertEquals("II", romAdd.add("I","I"));
+	}
 }
