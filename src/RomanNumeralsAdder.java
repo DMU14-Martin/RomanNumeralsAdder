@@ -1,7 +1,7 @@
 
 public class RomanNumeralsAdder {
 
-	public String add(String string, String string2) {
+	public String add(String inputA, String inputB) {
 		return "Ugyldig input";
 	}
 
