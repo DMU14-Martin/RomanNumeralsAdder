@@ -62,18 +62,34 @@ public class testRomanNumeralAdder {
 	}
 	
 	//testcase 4
-		@Test
-		public void inputIandQuestionmarkEqualsUgyldigInput(){
-			//input
-			final String inputA = "I";
-			final String inputB = "?";
-			
+	@Test
+	public void inputIandQuestionmarkEqualsUgyldigInput(){
+		//input
+		final String inputA = "I";
+		final String inputB = "?";
+	
 			//expected output
-			final String expected = "Ugyldig input";
+		final String expected = "Ugyldig input";
 			
-			//actual output
-			final String actual = romAdd.add(inputA, inputB);
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
 			
-			assertEquals(expected, actual);
-		}
+		assertEquals(expected, actual);
+	}
+	
+	//testcase 5
+	@Test
+	public void inputIandiEqualsUgyldigInput(){
+		//input
+		final String inputA = "I";
+		final String inputB = "i";
+	
+			//expected output
+		final String expected = "Ugyldig input";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}
 }
