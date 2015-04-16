@@ -20,7 +20,7 @@ public class RomanNumeralsAdder {
 
 
 	private boolean validator(String input){		
-		String regex = "^$|[?i]";
+		String regex = "^$|[^IVXLCDM]";
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
 		
