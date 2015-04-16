@@ -60,4 +60,20 @@ public class testRomanNumeralAdder {
 		
 		assertEquals(expected, actual);
 	}
+	
+	//testcase 4
+		@Test
+		public void inputIandQuestionmarkEqualsUgyldigInput(){
+			//input
+			final String inputA = "I";
+			final String inputB = "?";
+			
+			//expected output
+			final String expected = "Ugyldig input";
+			
+			//actual output
+			final String actual = romAdd.add(inputA, inputB);
+			
+			assertEquals(expected, actual);
+		}
 }
