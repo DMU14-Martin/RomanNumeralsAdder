@@ -12,10 +12,22 @@ public class RomanNumeralsAdder {
 	}
 	
 	
-	private String formatter(String inputA, String inputB) {
-		String temp = inputA + inputB;
-		temp = temp.replace("IIIII", "V");
-		return temp;
+	private String formatter(String inputA, String inputB) {	
+		char [] temp =(inputA + inputB).toCharArray();
+		String i = new String();
+		String v = new String();
+		
+		
+		for(char chara : temp){
+			if(chara == 'I'){
+				i+="I";
+			}
+			if(chara == 'V'){
+				i+="V";
+			}
+		}
+		
+		return (i+v).replace("IIIII", "V");
 	}
 
 
