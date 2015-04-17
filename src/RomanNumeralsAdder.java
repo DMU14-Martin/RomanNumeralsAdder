@@ -20,11 +20,11 @@ public class RomanNumeralsAdder {
 
 
 	private boolean validator(String input){		
-		String regex = "^$|[^IVXLCDM]";
+		String regex = "^$|[^IVXLCDM]|I[VXLCDM]|V[XLCDM]|X[LCDM]|L[CDM]|C[DM]|D[M]";
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
 		
-		if(regexMatcher.matches()){
+		if(regexMatcher.find()){
 			return false;
 		}
 		else
