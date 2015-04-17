@@ -24,7 +24,7 @@ public class RomanNumeralsAdder {
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
 		
-		if(regexMatcher.find()){
+		if(regexMatcher.matches()){
 			return false;
 		}
 		else
