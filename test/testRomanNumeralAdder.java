@@ -248,5 +248,22 @@ public class testRomanNumeralAdder {
 		final String actual = romAdd.add(inputA, inputB);
 			
 		assertEquals(expected, actual);
+	}
+
+	//testcase 16
+	@Test
+	public void inputCCandDEqualsDCC(){
+		//input
+		final String inputA = "CC";
+		final String inputB = "D";
+	
+			//expected output
+		final String expected = "DCC";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
 	}	
+	
 }
