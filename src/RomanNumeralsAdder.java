@@ -21,10 +21,10 @@ public class RomanNumeralsAdder {
 		for(char chara : temp){
 			if(chara == 'I'){
 				i+="I";
-			}
+			} else
 			if(chara == 'V'){
 				v+="V";
-			}
+			} else
 			if(chara == 'X'){
 				x+="X";
 			}
