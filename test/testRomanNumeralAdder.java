@@ -300,7 +300,7 @@ public class testRomanNumeralAdder {
 	@Test
 	public void inputMMMMDCCCLXXXXVIIIIandIEqualsUgyldigOutput(){
 		//input
-		final String inputA = "MMMMDCCCLXXXXVIIII";
+		final String inputA = "MMMMDCCCCLXXXXVIIII";
 		final String inputB = "I";
 	
 			//expected output

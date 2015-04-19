@@ -21,7 +21,7 @@ public class RomanNumeralsAdder {
 		String c = new String();
 		String d = new String();
 		String m = new String();
-		
+		String result = new String();
 		for(char chara : temp){
 			if(chara == 'I'){
 				i+="I";
@@ -45,8 +45,11 @@ public class RomanNumeralsAdder {
 				m+="M";	
 			}
 		}
-		
-		return replacer((m+d+c+l+x+v+i));
+		result = replacer((m+d+c+l+x+v+i));
+		if(validator(result))
+			return result;
+		else
+		return "Ugyldig Output";
 	}
 
 
@@ -58,7 +61,9 @@ public class RomanNumeralsAdder {
 				+ "|X[LCDM]" 		//if X comes before LCDM
 				+ "|L[CDM]" 		//if L comes before CDM
 				+ "|C[DM]" 			//if C comes before DM
-				+ "|D[M]"; 			//if D comes before M
+				+ "|D[M]"			//if D comes before M
+				+ "|M{5}";			//if MMMMM occurs and therefore is out of bound
+				
 		
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
