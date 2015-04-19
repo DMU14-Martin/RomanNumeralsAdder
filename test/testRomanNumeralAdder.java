@@ -154,5 +154,21 @@ public class testRomanNumeralAdder {
 		final String actual = romAdd.add(inputA, inputB);
 			
 		assertEquals(expected, actual);
+	}
+	
+	//testcase 10
+	@Test
+	public void inputXandXEqualsXX(){
+		//input
+		final String inputA = "X";
+		final String inputB = "X";
+	
+			//expected output
+		final String expected = "XX";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
 	}	
 }
