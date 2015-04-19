@@ -110,13 +110,13 @@ public class testRomanNumeralAdder {
 	}	
 	//testcase 7
 	@Test
-	public void inputIandIEqualsUgyldigInput(){
+	public void inputVIandIEqualsVII(){
 		//input
-		final String inputA = "IVIX";
+		final String inputA = "VI";
 		final String inputB = "I";
 	
 			//expected output
-		final String expected = "Ugyldig input";
+		final String expected = "VII";
 			
 		//actual output
 		final String actual = romAdd.add(inputA, inputB);
