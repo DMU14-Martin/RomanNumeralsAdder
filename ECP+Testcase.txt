@@ -160,8 +160,8 @@ b = DCCCCLXI	|		   |
 
 	Testcase 19
 ------------------------------------
-input		| forventet output |
-----------------|------------------|
-a = MMCLXXVII	|  Ugyldig Output  |
-b = I		|		   |
-----------------|------------------|
+input		 | forventet output |
+-----------------|------------------|
+a = MMMMCLXXVIIII|  Ugyldig Output  |
+b = I		 |		   |
+-----------------|------------------|

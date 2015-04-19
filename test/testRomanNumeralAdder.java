@@ -295,5 +295,4 @@ public class testRomanNumeralAdder {
 			
 		assertEquals(expected, actual);
 	}	
-	
 }
