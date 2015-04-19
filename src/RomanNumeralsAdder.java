@@ -20,6 +20,7 @@ public class RomanNumeralsAdder {
 		String l = new String();
 		String c = new String();
 		String d = new String();
+		String m = new String();
 		
 		for(char chara : temp){
 			if(chara == 'I'){
@@ -39,10 +40,13 @@ public class RomanNumeralsAdder {
 			}else
 			if(chara == 'D'){
 				d+="D";
+			}else
+			if(chara == 'M'){
+				m+="M";	
 			}
 		}
 		
-		return replacer((d+c+l+x+v+i));
+		return replacer((m+d+c+l+x+v+i));
 	}
 
 
@@ -70,7 +74,8 @@ public class RomanNumeralsAdder {
 				.replace("VV", "X")
 				.replace("XXXXX", "L")
 				.replace("LL", "C")
-				.replace("CCCCC", "D");
+				.replace("CCCCC", "D")
+				.replace("DD", "M");
 		return replaced;
 	}
 }
