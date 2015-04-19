@@ -343,5 +343,21 @@ public class testRomanNumeralAdder {
 			
 		assertEquals(expected, actual);
 	}	
+
+	//testcase 22
+	@Test
+	public void inputCCCCCandDDequalsUgyldigInput(){
+		//input
+		final String inputA = "CCCCC";
+		final String inputB = "DD";
+	
+			//expected output
+		final String expected = "Ugyldig input";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
 	
 }
