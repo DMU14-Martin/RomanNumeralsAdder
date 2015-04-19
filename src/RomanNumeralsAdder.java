@@ -62,8 +62,9 @@ public class RomanNumeralsAdder {
 				+ "|L[CDM]" 		//if L comes before CDM
 				+ "|C[DM]" 			//if C comes before DM
 				+ "|D[M]"			//if D comes before M
-				+ "|M{5}";			//if MMMMM occurs and therefore is out of bound
-				
+				+ "|M{5}"			//if MMMMM occurs and therefore is out of bound
+				+ "|V{2}"
+				+ "|I{5}";
 		
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
