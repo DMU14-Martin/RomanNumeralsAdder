@@ -63,6 +63,8 @@ public class RomanNumeralsAdder {
 				+ "|C[DM]" 			//if C comes before DM
 				+ "|D[M]"			//if D comes before M
 				+ "|M{5}"			//if MMMMM occurs and therefore is out of bound
+				+ "|D{2}"
+				+ "|C{5}"
 				+ "|L{2}"
 				+ "|X{5}"
 				+ "|V{2}"
