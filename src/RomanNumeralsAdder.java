@@ -13,7 +13,7 @@ public class RomanNumeralsAdder {
 	
 	
 	private String formatter(String inputA, String inputB) {	
-		char [] temp =(inputA + inputB).toCharArray();
+		final char [] temp =(inputA + inputB).toCharArray();
 		String i = new String();
 		String v = new String();
 		
@@ -32,7 +32,15 @@ public class RomanNumeralsAdder {
 
 
 	private boolean validator(String input){		
-		String regex = "^$|[^IVXLCDM]|I[VXLCDM]|V[XLCDM]|X[LCDM]|L[CDM]|C[DM]|D[M]";
+		final String regex = "^$" 	//nothing before end of string
+				+ "|[^IVXLCDM]" 	//anything thats not numerals
+				+ "|I[VXLCDM]" 		//if I comes before any other numeral
+				+ "|V[XLCDM]" 		//if V comes before XLCDM
+				+ "|X[LCDM]" 		//if X comes before LCDM
+				+ "|L[CDM]" 		//if L comes before CDM
+				+ "|C[DM]" 			//if C comes before DM
+				+ "|D[M]"; 			//if D comes before M
+		
 		Pattern checkRegex = Pattern.compile(regex);
 		Matcher regexMatcher = checkRegex.matcher(input);
 		
