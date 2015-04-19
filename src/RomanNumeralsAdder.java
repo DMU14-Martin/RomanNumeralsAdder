@@ -16,18 +16,21 @@ public class RomanNumeralsAdder {
 		final char [] temp =(inputA + inputB).toCharArray();
 		String i = new String();
 		String v = new String();
-		
+		String x = new String();
 		
 		for(char chara : temp){
 			if(chara == 'I'){
 				i+="I";
 			}
 			if(chara == 'V'){
-				i+="V";
+				v+="V";
+			}
+			if(chara == 'X'){
+				x+="X";
 			}
 		}
 		
-		return (i+v).replace("IIIII", "V");
+		return (x+v+i).replace("IIIII", "V").replace("VV", "X");
 	}
 
 
