@@ -312,4 +312,20 @@ public class testRomanNumeralAdder {
 		assertEquals(expected, actual);
 	}	
 	
+	//testcase 20
+	@Test
+	public void inputIIIIIandVVequalsUgyldigInput(){
+		//input
+		final String inputA = "IIIII";
+		final String inputB = "I";
+	
+			//expected output
+		final String expected = "Ugyldig input";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
+
 }
