@@ -165,3 +165,35 @@ input		      | forventet output |
 a = MMMMDCCCLXXXXVIIII|  Ugyldig Output  |
 b = I		      |		   	 |
 ----------------------|------------------|
+
+	Testcase 20
+------------------------------------
+input		| forventet output |
+----------------|------------------|
+a = IIIII	|  Ugyldig input   |
+b = VV		|		   |
+----------------|------------------|
+
+	Testcase 21
+------------------------------------
+input		| forventet output |
+----------------|------------------|
+a = XXXXX	|  Ugyldig input   |
+b = LL		|		   |
+----------------|------------------|
+
+	Testcase 22
+------------------------------------
+input		| forventet output |
+----------------|------------------|
+a = CCCCC	|  Ugyldig input   |
+b = DD		|		   |
+----------------|------------------|
+
+	Testcase 23
+------------------------------------
+input		| forventet output |
+----------------|------------------|
+a = MMMMM	|  Ugyldig input   |
+b = I		|		   |
+----------------|------------------|
