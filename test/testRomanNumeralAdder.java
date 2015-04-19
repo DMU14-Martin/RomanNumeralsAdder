@@ -170,5 +170,21 @@ public class testRomanNumeralAdder {
 		final String actual = romAdd.add(inputA, inputB);
 			
 		assertEquals(expected, actual);
+	}
+	
+	//testcase 11
+	@Test
+	public void inputXXIIandXXVIIIIEqualsL(){
+		//input
+		final String inputA = "XXII";
+		final String inputB = "XXVIII";
+	
+			//expected output
+		final String expected = "L";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
 	}	
 }
