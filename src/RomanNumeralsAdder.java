@@ -38,10 +38,7 @@ public class RomanNumeralsAdder {
 			}
 		}
 		
-		return (c+l+x+v+i).replace("IIIII", "V")
-				.replace("VV", "X")
-				.replace("XXXXX", "L")
-				.replace("LL", "C");
+		return replacer((c+l+x+v+i));
 	}
 
 
@@ -63,5 +60,12 @@ public class RomanNumeralsAdder {
 		}
 		else
 			return true;
+	}
+	private String replacer(String unreplaced){
+		String replaced = unreplaced.replace("IIIII", "V")
+				.replace("VV", "X")
+				.replace("XXXXX", "L")
+				.replace("LL", "C");
+		return replaced;
 	}
 }
