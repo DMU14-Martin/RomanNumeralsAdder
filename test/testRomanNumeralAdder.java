@@ -219,5 +219,19 @@ public class testRomanNumeralAdder {
 			
 		assertEquals(expected, actual);
 	}
+	//testcase 14
+	@Test
+	public void inputCandLEqualsCL(){
+		//input
+		final String inputA = "C";
+		final String inputB = "L";
 	
+			//expected output
+		final String expected = "CL";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
 }
