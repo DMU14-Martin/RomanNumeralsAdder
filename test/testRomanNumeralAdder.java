@@ -280,5 +280,20 @@ public class testRomanNumeralAdder {
 			
 		assertEquals(expected, actual);
 	}	
+	//testcase 18
+	@Test
+	public void inputMCCXVIIandDCCCCLXIEqualsMMCLXXVII(){
+		//input
+		final String inputA = "MCCXVII";
+		final String inputB = "DCCCCLXI";
+	
+			//expected output
+		final String expected = "MMCLXXVIII";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
 	
 }
