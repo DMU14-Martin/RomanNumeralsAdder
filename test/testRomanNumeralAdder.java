@@ -295,4 +295,21 @@ public class testRomanNumeralAdder {
 			
 		assertEquals(expected, actual);
 	}	
+
+	//testcase 19
+	@Test
+	public void inputMMMMDCCCLXXXXVIIIIandIEqualsUgyldigOutput(){
+		//input
+		final String inputA = "MMMMDCCCLXXXXVIIII";
+		final String inputB = "I";
+	
+			//expected output
+		final String expected = "Ugyldig Output";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
+	
 }
