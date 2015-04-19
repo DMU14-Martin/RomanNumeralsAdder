@@ -140,4 +140,19 @@ public class testRomanNumeralAdder {
 		assertEquals(expected, actual);
 	}	
 	
+	//testcase 9
+	@Test
+	public void inputVandVIIEqualsXII(){
+		//input
+		final String inputA = "V";
+		final String inputB = "VII";
+	
+			//expected output
+		final String expected = "XII";
+			
+		//actual output
+		final String actual = romAdd.add(inputA, inputB);
+			
+		assertEquals(expected, actual);
+	}	
 }
