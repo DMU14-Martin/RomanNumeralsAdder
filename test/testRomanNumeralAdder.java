@@ -317,7 +317,7 @@ public class testRomanNumeralAdder {
 	public void inputIIIIIandVVequalsUgyldigInput(){
 		//input
 		final String inputA = "IIIII";
-		final String inputB = "I";
+		final String inputB = "VV";
 	
 			//expected output
 		final String expected = "Ugyldig input";
